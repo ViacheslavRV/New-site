@@ -1,0 +1,212 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+.title-1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 22px;
+  background-color: #000;
+  border-radius: 30px;
+  font-size: 18px;
+  color: aqua;
+
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+.btn:hover,
+.btn:focus {
+  background-color: rgb(209, 194, 27);
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+  background-color: rgb(56, 31, 220);
+}
+/*Header*/
+
+.header {
+  padding-top: 46px;
+  background-color: #f1f1f1;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 74px;
+}
+.logo {
+  padding: 0 12px 3px 0;
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: #000;
+}
+
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: #fda300;
+  border-radius: 50%;
+}
+
+/*Nav*/
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav-button {
+  display: none;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link.active {
+  color: #606060;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header-content {
+  margin-top: 124px;
+  max-width: 500px;
+}
+
+.header-heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.header-content p {
+  color: #fda302;
+  line-height: 2;
+}
+
+/*Service*/
+
+.Services {
+  padding: 90px 0;
+}
+
+.services-row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+
+.service-card-img {
+  margin-bottom: 30px;
+}
+
+.service-card-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.service-card p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/*Portfolio*/
+.portfolio {
+  background-color: #f1f1f1;
+  padding: 90px 0;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+.project-img {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 18px;
+}
+
+.project-title a {
+  color: #000;
+  text-decoration: underline;
+}
+/* Footer*/
+
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+}
+
+.contacts-content {
+  margin: 0 auto 40px;
+  max-width: 480px;
+  font-size: 18px;
+}
+
+.contacts-buttom {
+  margin-bottom: 80px;
+}
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  align-items: center;
+}
+
+.contacts-footer {
+  color: #a01afa;
+}
